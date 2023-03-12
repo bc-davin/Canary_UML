@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-12T22:54:02.409Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="5PX5eQtLpm2E7nnyDp8M" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-12T23:05:01.708Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="8Hn5gaeT1cjcvfrhnrMe" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1743" dy="1197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -201,6 +201,30 @@
         </mxCell>
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-52" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;UpdateLeaderboardCallback&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+updateLeaderboard(leaderboard:Leaderboard):void&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="-490" y="2080" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-53" value="GetIndexArg" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1850" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-54" value="+ i=-1: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-53">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-55" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-53">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-56" value="+GetIndexArg( )&lt;br&gt;+getIndex(i:int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-53">
+          <mxGeometry y="60" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-57" value="PlayerQrCodeRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1690" width="340" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-58" value="-qrcode: DocumentReferece&lt;br&gt;-snapshot: DocumentReference&lt;br&gt;-scanDate: Timestamp&lt;br&gt;qrScore: long&lt;br&gt;-parsedPlayerQrCode: PlayerQrCode" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-57">
+          <mxGeometry y="26" width="340" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-59" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-57">
+          <mxGeometry y="120" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-60" value="+PlayerQrCodeRepository()&lt;br&gt;+PlayerQrCodeRepository(qrCode: DocumentReference,&lt;br&gt;snapshot: DocumentReference, ScanDate: Timestamp,&lt;br&gt;qrScore:long)&lt;br&gt;+setParsedQrCode(qrcode:QrCode, locSnap: Snapshot):void&lt;br&gt;+retrieveParsedPlayerQrCode(): PlayerQrCode&lt;br&gt;+getQrCode( ): DocumentReference&lt;br&gt;+SetQrCode(qrCode: DocumentReference):void&lt;br&gt;+getSnapshot(): DocumentReference&lt;br&gt;+setSnapshot( snapshot: DocumentReference):void&lt;br&gt;+getScanDate(): Timestamp&lt;br&gt;+setScanDate(scanDate: TimesStamp):void&lt;br&gt;+getQrScore():long&lt;br&gt;+setQrScore(qrScore:long):void&lt;br&gt;+retrievePlayerQrCode(qrCodeRepository:QrCodeRepository,&lt;br&gt;snapRepo: SnapshotRepository, date :Timestamp) PlayerQrCode" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-57">
+          <mxGeometry y="128" width="340" height="262" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
