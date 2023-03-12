@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-12T22:18:37.632Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="CHClbxlANX6FZh-CaTe_" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-12T22:27:51.035Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="gEnzl3UTsKB3yJu5pzac" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1743" dy="1197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -114,6 +114,15 @@
         </mxCell>
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-12" value="+doesQrWithHashExist(qrHash:String, resExistCallback: DoesResoruceExistCallback):void&lt;br&gt;&lt;br&gt;+getUsermaesOfPlayersWhoScanned(qrCode:Qrcode,&lt;br&gt;getPlayersScannedQrCallBack:GetPlayersScannedQrCallBack):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-9">
           <mxGeometry y="34" width="380" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-13" value="LeaderboardController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="510" width="520" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-13">
+          <mxGeometry y="26" width="520" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-16" value="+getPlayerWithMaxScore(players:ArrayList&amp;lt;LeaderboardPlayer): LeaderboardPlayer&lt;br&gt;+getPlayersSortedByScore(playersOrigg: ArrayList&amp;lt;LeaderboardPlayer): ArrayList&amp;lt;LeaderboardPlayer&amp;gt;&lt;br&gt;+getPlayersSortedByMaxQr(playersOrig: ArrayList&amp;lt;LeaderboardPlayer&amp;gt;): ArrayList&amp;lt;LeaderboardPlayer&amp;gt;&lt;br&gt;+getRankPlayer(username:String, sortedPlayer: ArrayList&amp;lt;Leaderboardplayer&amp;gt;):int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-13">
+          <mxGeometry y="34" width="520" height="96" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
