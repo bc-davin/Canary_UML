@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-12T22:09:58.323Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="4-FiNHqYSyB-SwVqQHUj" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-12T22:15:20.444Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="o2IumPT-uv8s5c7TaQbR" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1743" dy="1197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -95,7 +95,7 @@
           <mxGeometry y="34" width="260" height="106" as="geometry" />
         </mxCell>
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-5" value="FirestorePlayerController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-270" y="718" width="460" height="570" as="geometry" />
+          <mxGeometry x="-270" y="718" width="460" height="420" as="geometry" />
         </mxCell>
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-6" value="+Tag=&quot;FirestorePlayerController&quot;: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-5">
           <mxGeometry y="26" width="460" height="26" as="geometry" />
@@ -103,8 +103,8 @@
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-5">
           <mxGeometry y="52" width="460" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-8" value="+doesCurrentPlayerHaveQr( qrHash:String,&lt;br&gt;resExistCallback: DoesResourceExistCallback): void&lt;br&gt;#doesPlayerHaveQr(qrHash:String,&lt;br&gt;playerDocId: String): boolean&lt;br&gt;+addQrToCurrentPlayer(playerQrCode: PlayerQrCode, callback OperationStatusCallback):void&lt;br&gt;+updatePlayer(playerRepo:PlayerRepository):&lt;br&gt;void&lt;br&gt;+getPlayer(qrHash: String, callback GetPlayerQrCallback):void&lt;br&gt;+retrieveQSnapshotFromPlayer(playRepo:&lt;br&gt;PlayerRepository, qrRef: DoucmentReference, indexArg: GetIndexArg): SnapshotRepository&lt;br&gt;+deleteQrFromPlayer(playerQrCode: PlayerQrCode, callback: OperationStatuscallback):void&lt;br&gt;+getCompleteCurrentPlayer(callback: GetPlayerCallback):void&lt;br&gt;+getCompleteForeginPlayer(playerDocID: String: callback: GetPlayerCallback):void&lt;br&gt;\" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-5">
-          <mxGeometry y="60" width="460" height="510" as="geometry" />
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-8" value="+doesCurrentPlayerHaveQr( qrHash:String,&lt;br&gt;resExistCallback: DoesResourceExistCallback): void&lt;br&gt;#doesPlayerHaveQr(qrHash:String,&lt;br&gt;playerDocId: String): boolean&lt;br&gt;+addQrToCurrentPlayer(playerQrCode: PlayerQrCode, callback OperationStatusCallback):void&lt;br&gt;+updatePlayer(playerRepo:PlayerRepository):&lt;br&gt;void&lt;br&gt;+getPlayer(qrHash: String, callback GetPlayerQrCallback):void&lt;br&gt;+retrieveQSnapshotFromPlayer(playRepo:&lt;br&gt;PlayerRepository, qrRef: DoucmentReference, indexArg: GetIndexArg): SnapshotRepository&lt;br&gt;+deleteQrFromPlayer(playerQrCode: PlayerQrCode, callback: OperationStatuscallback):void&lt;br&gt;+getCompleteCurrentPlayer(callback: GetPlayerCallback):void&lt;br&gt;+getCompleteForeginPlayer(playerDocID: String: callback: GetPlayerCallback):void&lt;br&gt;#retrieveComplete(playerDocId:String): Player&lt;br&gt;+createPlayer(player: Player, callback: OperationStatusCallback):void&lt;br&gt;+getListOfPlayer(callback:GetPlayerListCallback):void&lt;br&gt;+doesCurrentPlayerExist(callback: OperationStatusCallback):void&lt;br&gt;#getIndexOfQrIjPlayer(playerRepo: PlayerRepository, qrRef: DocumentReference):int&lt;br&gt;#delteSnapshotForQr(playerRepo:PlayerRepository, qrIndex:int):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-5">
+          <mxGeometry y="60" width="460" height="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
