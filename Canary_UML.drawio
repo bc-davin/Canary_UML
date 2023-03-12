@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-12T23:36:23.359Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="MW-ZTM_85zfpideHwcCb" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-12T23:49:16.035Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Vbe2uzheh7f70DN63tos" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1743" dy="1197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -249,6 +249,18 @@
         </mxCell>
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-68" value="+QrCoderRepository(hash: String, score:long, location: GeoPoint, name: String)&lt;br&gt;+retrieveParsedQrCode( ): QrCode&lt;br&gt;+retrieveQrCodeRepo(qrCode: QrCode): QrCodeRepository&lt;br&gt;+getHash( ): String&lt;br&gt;+setHash(hash: String): void&lt;br&gt;+getScore( ): long&lt;br&gt;+setScore (score:long):void&lt;br&gt;+getName( ): String&lt;br&gt;+setName( name:String): void&lt;br&gt;+getQrCode( ): QrCode&lt;br&gt;+getLocation( ): GeoPoint&lt;br&gt;+setLocation(location: GeoPoint): void&lt;br&gt;+toString( ): String&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-65">
           <mxGeometry y="98" width="350" height="272" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-69" value="SnapshotRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1400" width="340" height="248" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-70" value="-docId: String&lt;br&gt;-data: String&lt;br&gt;-owner: DocumentReference" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-69">
+          <mxGeometry y="26" width="340" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-71" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-69">
+          <mxGeometry y="80" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-72" value="+SnapshotRepository()&lt;br&gt;+SnapshotRepository(data: String, owner: DocumentReference)&lt;br&gt;+getDocId( ): String&lt;br&gt;+setDocId(docId: String): void&lt;br&gt;+getData( ): String&lt;br&gt;+setData(data: String): Data&lt;br&gt;+getOwner( ); DocumentReference&lt;br&gt;+setOwner(owner: DocumentReference):void&lt;br&gt;+retrieveSnapshop( ): Snapshot" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-69">
+          <mxGeometry y="88" width="340" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
