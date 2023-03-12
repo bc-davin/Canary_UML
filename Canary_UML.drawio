@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-12T20:10:11.118Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="RuuWL_WCBsgtAw62rcfZ" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-12T20:17:08.632Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="8-Z0jlmZ7hQYx5884Ab2" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="474" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -38,7 +38,7 @@
           <mxGeometry y="88" width="190" height="112" as="geometry" />
         </mxCell>
         <mxCell id="nQNH612VHkfuGx5EY-RF-14" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="520" width="360" height="248" as="geometry" />
+          <mxGeometry x="170" y="520" width="360" height="400" as="geometry" />
         </mxCell>
         <mxCell id="nQNH612VHkfuGx5EY-RF-15" value="-username:String&lt;br&gt;-firstName: String&lt;br&gt;-lastName:String&lt;br&gt;-qrCodes: ArrayList&amp;lt;PlayerQrCode&amp;gt;&lt;br&gt;-score=0: long&lt;br&gt;-uniquePlayerId: String&lt;br&gt;-playerImage:Bitmap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nQNH612VHkfuGx5EY-RF-14">
           <mxGeometry y="26" width="360" height="104" as="geometry" />
@@ -46,8 +46,8 @@
         <mxCell id="nQNH612VHkfuGx5EY-RF-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="nQNH612VHkfuGx5EY-RF-14">
           <mxGeometry y="130" width="360" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="nQNH612VHkfuGx5EY-RF-17" value="+Player(username: String, firstName: String, lastName: String)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nQNH612VHkfuGx5EY-RF-14">
-          <mxGeometry y="138" width="360" height="110" as="geometry" />
+        <mxCell id="nQNH612VHkfuGx5EY-RF-17" value="+Player(username: String, firstName: String, lastName: String)&lt;br&gt;+getUsername:String&lt;br&gt;+setUsername(username:String):void&lt;br&gt;+getFirstName: String&lt;br&gt;+setFirstName(firstName: String):void&lt;br&gt;+getLastName(): String&lt;br&gt;+setLastName(lastName:String):void&lt;br&gt;+getQrCodes: ArrayList&amp;lt;PlayerQrCode&amp;gt;&lt;br&gt;+setQrCodes(Qrcodes:ArrayList&amp;lt;PlayerQrCode&amp;gt;):void&lt;br&gt;+getScore( ): long&lt;br&gt;+setScore (score: long):void&lt;br&gt;+getUniquePlayerId(): String&lt;br&gt;+setUniquePlayerID (uniquePlayerId: String):void&lt;br&gt;+getPlayerImage( ):Bitmap&lt;br&gt;+setPlayerImage(playerImage:Bitmap):void&lt;br&gt;+getHighestQr( ):long&lt;br&gt;+getLowestQr( ):long&lt;br&gt;_retrivesStringToDraw( ): String&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="nQNH612VHkfuGx5EY-RF-14">
+          <mxGeometry y="138" width="360" height="262" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
