@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-13T03:13:23.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Cxc_nKhZqSXaETyuqnFp" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-13T03:21:21.322Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="KUXbQ7G1-kM2zBnoKaHM" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1200" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -444,6 +444,18 @@
         </mxCell>
         <mxCell id="vomI06nWcd36ijiDDhCX-12" value="+PlayerProfile()&lt;br&gt;+onCreate(savedInstanceState Bundle):void&lt;br&gt;+onCreateView(inflater: LayoutInflater, container:ViewGroup, savedInstanceState:Bundle):View&lt;br&gt;-makeFirestoreReqForPlayer():void&lt;br&gt;-init():void&lt;br&gt;+onHiddenChanged(hidden:boolean):void&lt;br&gt;+onDestroyView():void&lt;br&gt;-updatePlayerImage(player:Player):void&lt;br&gt;-updateView():void&lt;br&gt;-getPlayer(player:Player):void&lt;br&gt;-showLoadingBar():void&lt;br&gt;-hideLoadingBar():void&lt;br&gt;-navigateToSelectedQr(playerQrCode:PlayerQrCode)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-9">
           <mxGeometry y="158" width="340" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-13" value="PlayerSearchFragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="3810" width="300" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-14" value="FragmentPlayerSearchBinding:binding&lt;br&gt;firestorePlayerController: FirestorePlayerController&lt;br&gt;searchAdapter:PlayerSearchAdapter&lt;br&gt;players:ArrayList&amp;lt;Player&amp;gt;&lt;br&gt;filteredPlayers:ArrayList&amp;lt;Player&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-13">
+          <mxGeometry y="26" width="300" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="vomI06nWcd36ijiDDhCX-13">
+          <mxGeometry y="120" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-16" value="+onCreate(savedInstanceState: Bundle):void&lt;br&gt;+onCreateView(inflater: LayoutInflater,&amp;nbsp;&lt;br&gt;container: ViewGroup, savedInstanceState: Bundle):View&lt;br&gt;-init( ):void&lt;br&gt;-setOnClickListeners():void&lt;br&gt;-showAllPlayers( ):void&lt;br&gt;-searchPlayerList(searchText: String):void&lt;br&gt;-navigateToSelectedPlayer(player: Player): void&lt;br&gt;+onHiddenChanged(hidden:boolean):void&lt;br&gt;+getPlayerList(players: ArrayList&amp;lt;Player&amp;gt;):void&lt;br&gt;-updatePlayersList():void&lt;br&gt;-showLoadingBar():void&lt;br&gt;-hideLoadingBar():void&lt;br&gt;+getIndex(ind: int):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-13">
+          <mxGeometry y="128" width="300" height="222" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
