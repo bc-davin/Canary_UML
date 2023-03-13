@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-13T00:28:36.043Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="boJnSvBLbxwKYAGVU8Z_" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-13T00:35:50.508Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="GqFWs7Txy5PaZkXkY91w" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1743" dy="1197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -372,6 +372,30 @@
         </mxCell>
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-113" value="+createIntent(context: Context, o : Object): Intent&lt;br&gt;+parseResult( i:int, intent: Intent): Bitmap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-110">
           <mxGeometry y="68" width="300" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-114" value="QrCodeDrawable" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="4020" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-115" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-114">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-116" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-114">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-117" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-114">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-118" value="AddNewQrFragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="3970" width="300" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-119" value="+TAG=&quot;AddNewQrFragment&quot;:String&lt;br&gt;-binding: FragmentAddNewQrBinding&lt;br&gt;-qrActivityLauncher: ActivityResultLancuher&amp;lt;object&amp;gt;&lt;br&gt;+qrHash: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-118">
+          <mxGeometry y="20" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-120" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-118">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-121" value="+OnCreateView( inflater: LayoutInflater, container: ViewGroup. savedInstanceState: Bundle): View&lt;br&gt;+OnViewCreated(view: View, savedInstanceState: Bundle): void&lt;br&gt;+onDestoryView( ): void&lt;br&gt;+init( ): void&lt;br&gt;+recievedQrCode( qrCodeVal: String): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-118">
+          <mxGeometry y="98" width="300" height="152" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
