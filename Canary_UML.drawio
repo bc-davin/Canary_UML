@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-13T04:00:49.511Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="6oD7422O3ApJ0F9rh7GF" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-13T04:04:00.149Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="YFdGUvWAlT1EQeWVsfLY" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
-    <mxGraphModel dx="1322" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1794" dy="1528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -516,6 +516,18 @@
         </mxCell>
         <mxCell id="vomI06nWcd36ijiDDhCX-40" value="+qrCodePressCallback(view:View, event: MotionEvent):boolean&lt;br&gt;+getContent():String&lt;br&gt;+setContent(content:String):void&lt;br&gt;+QrCodeVm(qrCode:Barcode)&lt;br&gt;+getQrcode( ): Barcode&lt;br&gt;+setQrCode(qrCode:Barcode):void&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-37">
           <mxGeometry y="68" width="260" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-41" value="MainActivity" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="3498" width="290" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-42" value="-binding: ActivityMainBinding&lt;br&gt;-appBarConfiguration:AppBarConfiguration" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-41">
+          <mxGeometry y="26" width="290" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="vomI06nWcd36ijiDDhCX-41">
+          <mxGeometry y="70" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-44" value="#onCreate(savedInstanceState: Bundle):void&lt;br&gt;-init(savedInstanceState: Bundle):void&lt;br&gt;-initNavBar(): void&lt;br&gt;+supportNavigateUp():boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-41">
+          <mxGeometry y="78" width="290" height="82" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
