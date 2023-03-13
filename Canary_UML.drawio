@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-13T03:41:23.415Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="xEA1NjtuUO-6XcrE1-a2" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-13T03:52:11.538Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="_rKV8hENSjKHckcEvCaC" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1200" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -448,7 +448,7 @@
         <mxCell id="vomI06nWcd36ijiDDhCX-13" value="PlayerSearchFragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1800" y="3810" width="300" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="vomI06nWcd36ijiDDhCX-14" value="FragmentPlayerSearchBinding:binding&lt;br&gt;firestorePlayerController: FirestorePlayerController&lt;br&gt;searchAdapter:PlayerSearchAdapter&lt;br&gt;players:ArrayList&amp;lt;Player&amp;gt;&lt;br&gt;filteredPlayers:ArrayList&amp;lt;Player&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-13">
+        <mxCell id="vomI06nWcd36ijiDDhCX-14" value="-FragmentPlayerSearchBinding:binding&lt;br&gt;-firestorePlayerController: FirestorePlayerController&lt;br&gt;-searchAdapter:PlayerSearchAdapter&lt;br&gt;-players:ArrayList&amp;lt;Player&amp;gt;&lt;br&gt;-filteredPlayers:ArrayList&amp;lt;Player&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-13">
           <mxGeometry y="26" width="300" height="94" as="geometry" />
         </mxCell>
         <mxCell id="vomI06nWcd36ijiDDhCX-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="vomI06nWcd36ijiDDhCX-13">
@@ -460,7 +460,7 @@
         <mxCell id="vomI06nWcd36ijiDDhCX-17" value="QRCodeViewFragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2120" y="3810" width="290" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="vomI06nWcd36ijiDDhCX-18" value="-TAG:String&lt;br&gt;playerQrCode: PlayerQrCode&lt;br&gt;binding: FragmentQrCodeViewBinding&lt;br&gt;builder: AlertDialog.Builder&lt;br&gt;firestorePlayerController:FirestorePlayerController" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-17">
+        <mxCell id="vomI06nWcd36ijiDDhCX-18" value="+TAG:String&lt;br&gt;-playerQrCode: PlayerQrCode&lt;br&gt;-binding: FragmentQrCodeViewBinding&lt;br&gt;-builder: AlertDialog.Builder&lt;br&gt;-firestorePlayerController:FirestorePlayerController" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-17">
           <mxGeometry y="26" width="290" height="94" as="geometry" />
         </mxCell>
         <mxCell id="vomI06nWcd36ijiDDhCX-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="vomI06nWcd36ijiDDhCX-17">
@@ -480,6 +480,18 @@
         </mxCell>
         <mxCell id="vomI06nWcd36ijiDDhCX-24" value="+ QrCapturePreferenceFragment()&lt;br&gt;+onCreate(savedInstanceState: Bundle):void&lt;br&gt;+onCreateViewCreated(view:View, savedInstanceState:Bundle):void&lt;br&gt;+init()&lt;br&gt;-showLoadingBar():void&lt;br&gt;-hideLoadingBar( ):void&lt;br&gt;+doesResourceExists(exists:boolean):void&lt;br&gt;+returnToQrCodePage():void&lt;br&gt;-updateUi():void&lt;br&gt;-recieveSnapshot(image: Bitmap):void&lt;br&gt;-persistQr(snapshot:Bitmap):void&lt;br&gt;-captureSnapshot( ):void&lt;br&gt;+operationStatus(status:boolean)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-21">
           <mxGeometry y="158" width="310" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-25" value="QrCapturePerferenceFragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="3790" width="360" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-26" value="+TAG:String&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;-QrCode: qrCode&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;-binding: FragmentQrCodeViewBinding&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;-builder: AlertDialog.Builder&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;-firestorePlayerController:FirestorePlayerController&lt;br&gt;-saveLocation:boolean&lt;br&gt;-snapshotActivityLauncher:ActivityResultLauncher&amp;lt;Object&amp;gt;&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-25">
+          <mxGeometry y="26" width="360" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="vomI06nWcd36ijiDDhCX-25">
+          <mxGeometry y="170" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-28" value="+QrCapturePerferenceFragment()&lt;br&gt;+onCreate(savedInstanceState:Bundle):void&lt;br&gt;+onCreateView(inflater:LayoutInflater, containerLViewGroup):View&lt;br&gt;+onViewCreated(view:View, savedInstanceState:Bundle):void&lt;br&gt;+init():void&lt;br&gt;-showLoadingBar():void&lt;br&gt;-hideLoadingBar():void&lt;br&gt;+doesResourceExists(exists:boolean):void&lt;br&gt;+returnToQrCodePage():void&lt;br&gt;-updateUi():void&lt;br&gt;-receiveSnapshot(image:Bitmap):void&lt;br&gt;-persistQr(snapshot:Bitmap):void&lt;br&gt;-captureSnapshot():void&lt;br&gt;-operationStatus(status:boolean):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-25">
+          <mxGeometry y="178" width="360" height="232" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
