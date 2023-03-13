@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-13T03:52:11.538Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="_rKV8hENSjKHckcEvCaC" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-13T03:56:47.469Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="hwK4j00Y3Iz4jENQ5Sou" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
-    <mxGraphModel dx="1200" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1322" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -492,6 +492,18 @@
         </mxCell>
         <mxCell id="vomI06nWcd36ijiDDhCX-28" value="+QrCapturePerferenceFragment()&lt;br&gt;+onCreate(savedInstanceState:Bundle):void&lt;br&gt;+onCreateView(inflater:LayoutInflater, containerLViewGroup):View&lt;br&gt;+onViewCreated(view:View, savedInstanceState:Bundle):void&lt;br&gt;+init():void&lt;br&gt;-showLoadingBar():void&lt;br&gt;-hideLoadingBar():void&lt;br&gt;+doesResourceExists(exists:boolean):void&lt;br&gt;+returnToQrCodePage():void&lt;br&gt;-updateUi():void&lt;br&gt;-receiveSnapshot(image:Bitmap):void&lt;br&gt;-persistQr(snapshot:Bitmap):void&lt;br&gt;-captureSnapshot():void&lt;br&gt;-operationStatus(status:boolean):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-25">
           <mxGeometry y="178" width="360" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-29" value="SplashFragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="3459" width="280" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-30" value="+TAG:String&lt;br&gt;firestorePlayerControllre:FirestorePlayerController&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-29">
+          <mxGeometry y="26" width="280" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="vomI06nWcd36ijiDDhCX-29">
+          <mxGeometry y="80" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-32" value="-onCreate(savedInstanceState: Bundle):void&lt;br&gt;-onCreateView(inflater:LayoutInflater, container:ViewGroup, savedInstanceState:Bundle):View&lt;br&gt;+onResume():void&lt;br&gt;-navigateToHome():void&lt;br&gt;-navigateToCreateProfile():void&lt;br&gt;+operationStatus(status:boolean):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-29">
+          <mxGeometry y="88" width="280" height="132" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
