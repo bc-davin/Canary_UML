@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-13T02:44:24.878Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="AoiM9HfAs9F7vBugzZNf" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-13T03:05:14.105Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="B1Ry_dtbL0EAMSMjSPDr" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1200" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -420,6 +420,18 @@
         </mxCell>
         <mxCell id="vomI06nWcd36ijiDDhCX-4" value="+HomeFragment()&lt;br&gt;+OnCreate(savedInstanceState: Bundle): void&lt;br&gt;+OnCreateView(inflater: LayoutInfalter, container: ViewGroup): View&lt;br&gt;+Init():void&lt;br&gt;+OnHiddenChanged(hidden:boolean):void&lt;br&gt;+launchScanQrActivity():void&lt;br&gt;+receiveAddedQrCode(qrHash: String):void&lt;br&gt;+showLoadingBar( ):void&lt;br&gt;-hideLoadingBar():void&lt;br&gt;+getPlayer(player:Player):void&lt;br&gt;-updatePlayerInfo():void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-1">
           <mxGeometry y="128" width="290" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-5" value="LeaderboardFragment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="4260" width="360" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-6" value="+TAG=&quot;LeaderboardFragment&quot;: String&lt;br&gt;+title: String&lt;br&gt;-progressBarTitle:String&lt;br&gt;-progressBarMessage: String&lt;br&gt;-leaderboard: Leaderboard&lt;br&gt;-playerUserName:String&lt;br&gt;-binding: FragmentLeaderboardBinding&lt;br&gt;-firestoreController: FirestoreController&lt;br&gt;-leaderboardRankListAdpter: leaderboardRankListAdapter" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-5">
+          <mxGeometry y="26" width="360" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="vomI06nWcd36ijiDDhCX-5">
+          <mxGeometry y="190" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vomI06nWcd36ijiDDhCX-8" value="+onCreate(savedInstanceState: Bundle):void&lt;br&gt;+onCreateView(inflater:LayoutInFlater,container:ViewGroup,&lt;br&gt;savedInstanceState:Bundle): View&lt;br&gt;-init( ):void&lt;br&gt;+onHiddenChanged(hidden:boolean):void&lt;br&gt;+onDestoryView():void&lt;br&gt;+updateLeaderboard(Leaderboard leaderboard):void&lt;br&gt;-fillleaderboardInfo( ):void&lt;br&gt;-showLoading:void&lt;br&gt;-hideLoadingBar:void&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="vomI06nWcd36ijiDDhCX-5">
+          <mxGeometry y="198" width="360" height="182" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
