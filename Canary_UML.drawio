@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-12T23:49:16.035Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Vbe2uzheh7f70DN63tos" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-13T00:00:46.585Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="lUVRC_pE85FGpYwW_DVK" version="21.0.6" type="github">
   <diagram name="Page-1" id="iM3VnT9SyAMWZlAbuz2z">
     <mxGraphModel dx="1743" dy="1197" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -261,6 +261,33 @@
         </mxCell>
         <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-72" value="+SnapshotRepository()&lt;br&gt;+SnapshotRepository(data: String, owner: DocumentReference)&lt;br&gt;+getDocId( ): String&lt;br&gt;+setDocId(docId: String): void&lt;br&gt;+getData( ): String&lt;br&gt;+setData(data: String): Data&lt;br&gt;+getOwner( ); DocumentReference&lt;br&gt;+setOwner(owner: DocumentReference):void&lt;br&gt;+retrieveSnapshop( ): Snapshot" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-69">
           <mxGeometry y="88" width="340" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-73" value="AddQrActivity" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="3160" width="380" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-74" value="+Tag=&quot;AddQrActivity&quot; : String&lt;br&gt;-appBarConfiguration: AppBarConfiguration&lt;br&gt;-binding: ActivityAddQrBinding&lt;br&gt;-qrActivtyLauncher: ActivityResultLauncher&amp;lt;Object&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-73">
+          <mxGeometry y="26" width="380" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-75" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-73">
+          <mxGeometry y="100" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-76" value="#onCreate(savedInstance: Bundle): void&lt;br&gt;+OnSupportNavigateUp( ): boolean&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-73">
+          <mxGeometry y="108" width="380" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-77" value="«interface»&lt;br&gt;&lt;b&gt;AppCompatActivity&lt;/b&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="3020" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-78" value="CameraBaseActivity" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="3150" width="470" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-79" value="+Tag=&quot;CameraBaseActivity&quot; : String&lt;br&gt;-CAM_PREMISSIONS={Manifest.premission.CAMERA}: String[ ]&lt;br&gt;# REQUEST_CODE_PERMISSIONS=10: int&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-78">
+          <mxGeometry y="26" width="470" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-80" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-78">
+          <mxGeometry y="80" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GJ8ESOO0SuFdvQ9mrWzl-81" value="#Intit( ): void&lt;br&gt;#checkPermissions: void&amp;nbsp;&lt;br&gt;#askPermissions: void&lt;br&gt;#arePermissionsGranted: boolean&lt;br&gt;#openCamera: void&lt;br&gt;+onRequestPremission( requestCode: int, premission: String [ ], grantResult: int[ ]):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="GJ8ESOO0SuFdvQ9mrWzl-78">
+          <mxGeometry y="88" width="470" height="132" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
